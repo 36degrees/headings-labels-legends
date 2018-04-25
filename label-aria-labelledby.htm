@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Label with aria-labelledby</title>
+  <link rel="stylesheet" href="style.css">
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <form>
+    <h1 class="heading">
+      <label id="label" for="national-insurance-number">
+        National insurance number
+      </label>
+    </h1>
+
+    <span id="hint" class="hint">It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’.</span>
+    <span id="error" class="error">Enter your national insurance number</span>
+
+    <input id="national-insurance-number" name="nin" type="text" aria-labelledby="label hint error">
+  </form>
+
+</body>
+</html>
